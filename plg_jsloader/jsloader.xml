@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - jsLoader</name>
+	<author>Esteban Soler</author>
+	<creationDate>December 2008</creationDate>
+	<copyright>All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>esteban@informalthinkers.com</authorEmail>
+	<authorUrl>www.informalthinkers.com</authorUrl>
+	<version>1.0</version>
+	<description>a plugin that organizes the js load in the page</description>
+	<files>
+		<filename plugin="jsloader">jsloader.php</filename>
+	</files>
+	<params/>
+</install>

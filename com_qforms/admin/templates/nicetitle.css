@@ -1,0 +1,34 @@
+div.nicetitle {
+	padding: 0.2em 0.5em;
+    margin-top: -20px;
+	color: white;
+	background: #496FA3;
+	font-size: larger;
+	font-family: Tahoma;
+	border-top: 4px solid #819FC7;
+	border-left: 1px solid #819FC7;
+	border-bottom: 4px solid #819FC7;
+	border-right: 1px solid #819FC7;
+	border-color: #B5C7DF;
+ 
+	/* Required */
+	position: absolute;
+	overflow: hidden;
+	width: 16em;
+
+	/* Mozilla proprietary */
+	-moz-border-radius: 1em;
+}
+div.nicetitle .text {
+	color: white;
+	background: transparent;
+	font-weight: bold;
+}
+div.nicetitle .href {
+	color: #AABDD6;
+	background: transparent;
+	font-size: smaller;
+
+	/* Required for Opera */
+	white-space: pre;
+}

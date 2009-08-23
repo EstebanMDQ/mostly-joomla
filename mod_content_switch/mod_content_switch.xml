@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Content Switch</name>
+	<author>Esteban Soler</author>
+	<creationDate>August 2009</creationDate>
+	<copyright>Copyright (C) 2007 - 2009 Informal Thinkers. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>esteban@informalthinkers.com</authorEmail>
+	<authorUrl>www.informalthinkers.com</authorUrl>
+	<version>1.0</version>
+	<description>Module to show the modules from one position or another depending if the user is logged in or not</description>
+	<files>
+		<filename module="mod_content_switch">mod_content_switch.php</filename>
+	</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="suffix for the module" />
+		<param name="pretext" type="textarea" cols="30" rows="5" default="" label="Pre-text" description="Prepend text for the contents" />
+		<param name="posttext" type="textarea" cols="30" rows="5" label="Post-text" description="Postpong text for the contents" />
+		<param name="unlogged_position" type="text" default="user8" label="UnLogged Position" description="Position to load the modules from when in unlogged mode" />
+		<param name="logged_position" type="text" default="user9" label="Logged Position" description="Position to load the modules from when in logged mode" />
+	</params>
+</install>
+

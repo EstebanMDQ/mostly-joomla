@@ -1,0 +1,267 @@
+/*
+ *    This file is part of QForms
+ *
+ *    qForms is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    qForms is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with qForms.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+input,
+textarea,
+select,
+checkbox {
+    vertical-align: middle;
+    margin-right: .25em;
+    font-size: 8pt;
+}
+
+input.XFormsWidgetTextField {
+    min-width: 50px;
+    width: 100%;
+}
+input.xfABMWidgetNumber {
+    min-width: 50px;
+    width: 50px;
+}
+
+input.XFormsWidgetTextField {
+    min-width: 50px;
+    width: 100%;
+}
+
+.xfABMDataRow1      { background-color: #F5F5F5; }
+.xfABMDataRow2      { background-color: #F5F5F5; }
+.xfABMTypeInteger   { text-align: right; color: blue; }
+.xfABMTypeText      { }
+
+#xfABMMainTable     {  width: 100%; }
+#xfABMMainTable a { color:black; }
+
+#xfABMMainTable td  { padding: 3px; }
+#xfABMMainTable th  { background-color: #F5F5F5; font-weight: bold; text-align: center;   color: #FFFFFF; padding: 5px; }
+#xfABMMainTable .xfABMMainTitle, .xfABMFormTable .xfABMMainTitle    { text-align: right; font-weight: bold; font-size: 12pt; background-color: #006699; color: #FFFFFF; -moz-border-radius: 10px; padding: 5px; }
+
+td.xfABMMainControls { text-align: left; white-space: nowrap; }
+
+td.xF_MassDelete { text-align: right; }
+
+table.xfABMFormTable td.xfABMMainControls  { white-space: nowrap; text-align: right; }
+
+#xfABMMainTitle     { margin: 0; padding:0; display:block; width: 98%; text-align: left; font-weight: bold; font-size: 8pt; background-color: #006699; color: #FFFFFF; padding: 5px; height: 30px; padding-left: 30px; }
+
+.inDialog #xfABMMainTitleFr #xfABMMainTitle {
+    position:fixed; -moz-border-radius: 0; width: 100%;
+    position:expression('absolute');
+    top: expression(eval((document.documentElement&&document.documentElement.scrollTop)?document.documentElement.scrollTop:document.body.scrollTop));
+    right: expression("0px");
+}
+.inDialog #xfABMMainTitleFr { height: 55px; vertical-align: top; }
+
+#xfABMFilterTable th  { font-weight: normal; text-align: left; color: #006699; }
+#xfABMFilterTable td  { padding: 0; text-align: left; white-space: nowrap; }
+
+.xfABMFormTable     { width: 100%; vertical-align:top; background-color: #F5F5F5 }
+.xfABMFormTable th  { margin:0; border:none; width: 40%; text-align: right; vertical-align: top; padding-right: 20px; }
+.xfABMFormTable th .required { font-weight: bold; }
+.xfABMFormTable td  { margin:0; border:none; text-align: left; }
+.xfABMFormTable td.groupDivision  { background-color: #A5A5A5; text-align: left; color:white; font-weight: bold;}
+
+.xfABMFormTable tr.rowed td, .xfABMFormTable tr.rowed th  { border-bottom: 1px solid #DEDEDE; }
+.xfABMFormTable tr.rowed td  { width: 300px; }
+.xfABMFormTable tr.rowed th  { width: 200px; }
+
+.xfABMFormTable .focused { background-color: lightblue; }
+.xfABMFormTableDescription {display: block; margin-left: 30px; margin-top: 5px;margin-bottom: 10px; }
+#xfABMErrors        { font-weight: bold; color: red; }
+#xfABMForm .errorField  { border: 2px solid red; }
+
+.requiredBlock, .optionalBlock  {display:inline; width:2px; height: 13pt; padding: 0; margin:1px;}
+.requiredBlock  { background-color: red; }
+.xF_date_button { background-image: url(../date_pid.gif); width: 18px; border: none; }
+
+#xfABMDataTable                 { border-top: 2px solid #A5A5A5; border-bottom: 2px solid #A5A5A5; }
+#xfABMDataTable tr td           { border-bottom: 1px solid #A5A5A5; }
+#xfABMDataTable tr td           { padding-left: 10px; }
+#xfABMDataTable tr.rowOdd       { background-color: #F5F5F5; }
+#xfABMDataTable tr.rowEven      { background-color: #F5F5F5; }
+#xfABMDataTable tr.rowRuled     { background-color: #FFFFFF; }
+#xfABMDataTable tr.rowSelected  { background-color: #FFFFFF; }
+#xfABMDataTable tr th  { text-align: left; background-color: #A5A5A5; color: black; border-bottom:2px solid silver; }
+
+.clear { clear: both; }
+.xfABMFormTable .subtitulo  {  font-weight: bold; text-align: left; color: #006699;}
+
+/**
+Widget styles
+**/
+
+fieldset { -moz-border-radius: 10px; }
+
+.XFormsWidget_TextArea		{
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.xfABMWidgetNumber      { text-align: right; white-space: nowrap; }
+td.xfABMWidgetButton    { width: 1%; }
+.xfABMWidgetButton input{ width: auto; padding: 1px margin:0px; border: 1px outset white; }
+
+.xfABMWidgetCurrency_neg{ color: red}
+
+.xfABMWidgetDate { white-space: nowrap; }
+
+
+/**
+User styles
+**/
+.xNPagesMenu    { padding: 5px; background-color: #CCCCCC; }
+.xNPagesMenu a  { text-decoration:none; font-weight: bold; padding: 2px; border: 2px outset #CCCCCC; }
+
+a.xfButtonBase, a.xfABMWidgetButton { color: black; text-decoration: underline; border: none; background-color: transparent; }
+td.xfABMMainControls .xfButtonView,
+td.xfABMMainControls .xfButtonUpdate,
+td.xfABMMainControls a.xfButtonView,
+td.xfABMMainControls a.xfButtonUpdate,
+td.xfABMMainControls a.xfButtonDelete
+    { font-size: 8pt; font-weight: normal; padding:1;  }
+/*
+input.xfButtonBase {
+    padding-top: 0pt;
+    background-image: url(bgButtor.gif);
+    background-repeat: repeat-x;
+    -x-background-x-position: left;
+    -x-background-y-position: top;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: rgb(92, 93, 97);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(92, 93, 97);
+    border-top-width: medium;
+    border-top-style: none;
+    border-top-color: -moz-use-text-color;
+    border-left-width: medium;
+    border-left-style: none;
+    border-left-color: -moz-use-text-color;
+    font-size: 80%;
+    color: rgb(255, 255, 255);
+    padding-top: 1px;
+    padding-right-value: 3px;
+    padding-bottom: 1px;
+    padding-left-value: 3px;
+    padding-left-ltr-source: physical;
+    padding-left-rtl-source: physical;
+    padding-right-ltr-source: physical;
+    padding-right-rtl-source: physical;
+    cursor: pointer;
+    font-weight: bold;
+    display: inline;
+    margin-top: 0pt;
+    margin-right-value: 2px;
+    margin-bottom: 0pt;
+    margin-left-value: 2px;
+    margin-left-ltr-source: physical;
+    margin-left-rtl-source: physical;
+    margin-right-ltr-source: physical;
+    margin-right-rtl-source: physical;
+}
+*/
+.xfABMFormTable .XFormsWidgetTextField, .xfABMFormTable textarea { width: 90%; }
+
+#xfChangesMadeMessage { display: none; color: red; }
+
+.tabsheet { clear:both; }
+/*
+.tabSheetSelector {
+    margin: 0;
+    font: bold 10pt verdana, arial, sans-serif;
+    list-style-type: none;
+    height: 17pt;
+    padding-left: 10px;
+    border-bottom: 1px solid #33c;
+    margin: 0;
+}
+
+.tabSheetSelector li {
+    float: left;
+    height: 15pt;
+    background-color: #EFFBFF;
+    margin: 2px 2px 0 2px;
+    border: 1px solid #33c;
+}
+
+.tabSheetSelector .selected a {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    font-weight: bold;
+}
+
+
+.tabSheetSelector a {
+    float: left;
+    vertical-align: middle;
+    display: block;
+    color: #666;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 1pt 4pt 1pt 4pt ;
+}
+
+.tabSheetSelector .firstTab { background-color: #006da3; }
+.tabSheetSelector .firstTab a { color: #fff; font-weight: bold;}
+
+.tabSheetSelector a:hover { background: #fff; color: #000; }
+
+.tabSheetSelector .selected a{
+    color: #000;
+}
+*/
+/* TOP MENU PART PART ------ **********************************/
+.tabSheetSelector { margin: 0; padding: 0; background: transparent; height: 31px; width: 100% }
+.tabSheetSelector  ul { list-style: none; padding: 9px 0; margin: 0; float: right; background-color: transparent }
+.tabSheetSelector li {
+   width: auto !important;
+   width: 0%;
+   float: left;
+   margin: 0;
+   font-size: 10px;
+   line-height: 30px;
+   white-space: nowrap;
+   background: #669 top left no-repeat;
+   border-left: 1px #fff solid;
+   border-right: 1px #333 solid;
+   list-style: none;
+   padding-right: 2px
+}
+
+.tabSheetSelector a {
+   font-family: Verdana, Arial, Sans-Serif;
+   font-size: 1.1em;
+   display: block;
+   padding-left: 0px;
+   padding-right: 10px;
+   text-decoration: none;
+   color: #fff;
+   /* background: url(../../../images/menur_a.gif) top right no-repeat; */
+   margin-top: 0px;
+   margin-left: 9px
+}
+
+#topmenu a.current { font-weight: bold ; background-color: #ccc; color: #000;}
+
+.tabSheetSelector .selected a{
+    text-decoration: underline;
+}
+.tabSheetSelector .firstTab { background-color: #227; }

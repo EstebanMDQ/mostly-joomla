@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>qForms</name>
+	<creationDate>2008-12-25</creationDate>
+	<author>Esteban Soler</author>
+	<authorEmail>esteban@informalthinkers.com</authorEmail>
+	<authorUrl>http://www.informalthinkers.com</authorUrl>
+	<copyright>All Rights Reserved</copyright>
+	<license>GPL v3.0</license>
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>qForms . Helper to build listings and forms</description>
+
+
+	<administration>
+		<!-- Administration Menu Section -->
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Site Main File Copy Section -->
+			<filename>modulo.qforms_do.php</filename>
+			<filename>gpl-3.0.txt</filename>
+			<filename>qforms.base.php</filename>
+			<filename>adodb-time.inc.php</filename>
+			<filename>qforms.widgets.php</filename>
+			<filename>qforms.config.php</filename>
+			<filename>mailer.lib.php</filename>
+			<filename>qforms.php</filename>
+			<filename>modulo.qforms.php</filename>
+			<filename>lwutils.php</filename>
+			<filename>qforms.widget_picker.php</filename>
+			<filename>modulo.configuration.php</filename>
+			<filename>qforms.generic.export_print.php</filename>
+			<filename>templates/xforms.template.confirm.php</filename>
+			<filename>templates/bg.gif</filename>
+			<filename>templates/xforms.template.form.php</filename>
+			<filename>templates/csshover.htc</filename>
+			<filename>templates/xforms.template2.css</filename>
+			<filename>templates/xforms.template.wizard.php</filename>
+			<filename>templates/xforms.template.export.csv.php</filename>
+			<filename>templates/qforms.simple-template.js</filename>
+			<filename>templates/xforms.template.css</filename>
+			<filename>templates/xforms.template.tabbedform.php</filename>
+			<filename>templates/qforms.template2.js</filename>
+			<filename>templates/prototypeUtils.js</filename>
+			<filename>templates/xforms.template.subModal.php</filename>
+			<filename>templates/jsQuickForms.js</filename>
+			<filename>templates/date_pid.gif</filename>
+			<filename>templates/qforms.template.list.php</filename>
+			<filename>templates/xforms.template.export.php</filename>
+			<filename>templates/xforms.template.print.php</filename>
+			<filename>templates/gui.js</filename>
+			<filename>templates/nicetitle.css</filename>
+			<filename>templates/xforms.template2.confirm.php</filename>
+			<filename>templates/nicetitle.js</filename>
+			<filename>templates/xforms.template.subModal_confirm.php</filename>
+			<filename>templates/bgButtor.gif</filename>
+			<filename>templates/qforms.template.form.php</filename>
+			<filename>templates/xforms.template.list.php</filename>
+			<filename>templates/xforms.base.js</filename>
+			<filename>templates/prototype.js</filename>
+			<filename>templates/qforms.simple-template.list.php</filename>
+			<filename>templates/qforms.simple-template.form.php</filename>
+			<filename>templates/xforms.template2.list.php</filename>
+			<filename>templates/xforms.template2.form.php</filename>
+			<filename>templates/cssQuery-p.js</filename>
+			<filename>templates/dialogs.js</filename>
+			<filename>templates/xforms.date.calendar.js</filename>
+			<filename>templates/qforms.template.confirm.php</filename>
+		</files>
+	</administration>
+</install>
